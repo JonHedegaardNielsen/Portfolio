@@ -1,6 +1,7 @@
 :root{
     --main-font-color: rgba(204, 215, 216, 0.672);
     --main-background-color:rgb(50, 50, 50);
+    --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
@@ -9,14 +10,14 @@ body{
 
 .title{
     color: var(--main-font-color);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 42px;
+    font-family: var(--main-font);
+    font-size: 50px;
 }
 
 .links{
     color: var(--main-background-color);
     font-size:20px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: --main-font;
     margin-top: 20px;
 }
 
@@ -40,11 +41,58 @@ body{
 #aboutSection{
     background-color: var(--main-font-color);
     display: flex;
-    width: 200px;
-    padding-bottom: 40px;
-    padding-top: 20px;
+    width: 600px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
     padding-left: 20px;
     border-radius: 15px;
     flex-direction: column;
     margin-top: 50px;
+}
+
+.aboutMeText{
+    color: var(--main-background-color);
+    font-family: var(--main-font);
+    font-size: 24px;
+}
+
+#contactInfoBox{
+    background-color: var(--main-font-color);
+    display: flex;
+    border-radius: 15px;
+    padding-left: 15px;
+    width: 500px;
+    height: auto;
+    padding-bottom: 7px;
+}
+
+#contactInfoBoxText{
+    font-family:var(--main-font);
+    font-size: 24px;
+}
+
+.project{
+    background-color: rgb(87, 87, 87);
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.projectName{
+    color: rgb(192, 230, 236);
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--main-font);
+}
+
+.projectImage{
+    width: 400px;
+}
+
+.projectDescription{
+    font-size: 20px;
+    color: var(--main-font-color);
+    font-family: var(--main-font);
 }
