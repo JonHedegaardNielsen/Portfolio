@@ -1,0 +1,27 @@
+:root{
+    --main-font-color: rgba(216, 199, 199, 0.672);
+    --main-background-color:rgb(50, 50, 50);
+}
+
+body{
+    background-color: var(--main-background-color);
+}
+
+.title{
+    color: var(--main-font-color);
+}
+
+.links{
+    color: var(--main-background-color);
+    font-size:20px ;
+}
+
+.linksBox{
+    background-color: var(--main-font-color);
+    display: flex;
+    width: 200px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 15px;
+}
