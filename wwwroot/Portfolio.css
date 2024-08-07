@@ -2,6 +2,7 @@
     --main-font-color: rgba(204, 215, 216, 0.672);
     --main-background-color:rgb(50, 50, 50);
     --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --project-width: 500px
 }
 
 body{
@@ -9,14 +10,14 @@ body{
 }
 
 .title{
-    color: var(--main-font-color);
+    color: rgba(204, 215, 216, 0.893);
     font-family: var(--main-font);
     font-size: 50px;
 }
 
 .links{
     color: var(--main-background-color);
-    font-size:20px;
+    font-size:30px;
     font-family: --main-font;
     margin-top: 20px;
 }
@@ -24,7 +25,7 @@ body{
 .linksBox{
     background-color: var(--main-font-color);
     display: flex;
-    width: 200px;
+    width: 300px;
     padding-bottom: 40px;
     padding-top: 20px;
     padding-left: 20px;
@@ -33,9 +34,13 @@ body{
     margin-top: 50px;
 }
 
+
 #profileImage{
-    display: flex ;
-    flex-direction: row;
+    top: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
 }
 
 #aboutSection{
@@ -74,9 +79,12 @@ body{
 
 .project{
     background-color: rgb(87, 87, 87);
-    width: 400px;
+    width: var(--project-width);
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
 }
 
 .projectName{
@@ -88,11 +96,17 @@ body{
 }
 
 .projectImage{
-    width: 400px;
+    width: var(--project-width);
+    height: 300px;
 }
 
 .projectDescription{
-    font-size: 20px;
+    font-size: 22px;
     color: var(--main-font-color);
     font-family: var(--main-font);
 }
+
+.projectDescriptionSection{
+    height: 150px;
+}
+
